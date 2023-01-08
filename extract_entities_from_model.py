@@ -13,7 +13,7 @@ class ExtractEntitiesFromModel:
         for ent in doc.ents:
             match_obj = {"entity": ent.label_,
                          "value": ent.text,
-                         "text": ent.text, "confidence": 1, "startChar": ent.start_char,
+                         "text": ent.text, "confidence": 100, "startChar": ent.start_char,
                          "endChar": ent.end_char}
             entities.append(match_obj)
 

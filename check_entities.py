@@ -17,7 +17,7 @@ class ExtractEntities:
     @staticmethod
     def tag_gazetteer_entities_from_text(text):
         doc = nlp(text)
-        entities = [{"text": ent.text, "entity": ent.label_, "value": ent.ent_id_, "startChar": ent.start_char, "endChar": ent.end_char} for ent in doc.ents]
+        entities = [{"text": ent.text, "entity": ent.label_, "value": ent.ent_id_, "startChar": ent.start_char, "endChar": ent.end_char, "confidence": 100} for ent in doc.ents]
         return entities
 
     @staticmethod

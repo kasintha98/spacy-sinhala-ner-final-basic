@@ -2,11 +2,16 @@ import spacy
 from spacy.tokens import DocBin
 from tqdm import tqdm
 import json
+import os
 
 nlp = spacy.blank("si")  # load a new spacy model
 db = DocBin()  # create a DocBin object
+file_dir = 'C:/Users/SysAdminModule/Desktop/Research/spacy-sinhala-ner-final-basic/raw-files'
+filename = 'annotations v1.0.json'
 
-f = open('training_data_v2.1.json', encoding="utf8")
+annotations = os.path.join(file_dir, filename)
+
+f = open(annotations, encoding="utf8")
 TRAIN_DATA = json.load(f)
 
 for text, annot in tqdm(TRAIN_DATA['annotations']):
@@ -21,4 +26,4 @@ for text, annot in tqdm(TRAIN_DATA['annotations']):
     doc.ents = ents
     db.add(doc)
 
-db.to_disk("./training_data_v2.1.spacy")  # save the docbin object
+db.to_disk("./training_data_v1.0.spacy")  # save the docbin object

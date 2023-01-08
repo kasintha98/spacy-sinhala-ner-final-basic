@@ -2,7 +2,7 @@ import csv
 import os
 
 filename = "gazetteer.csv"
-file_dir = 'D:/#CAMPUS/4th Year/Research/spacy-senhala-with-entity-ruler/raw-files'
+file_dir = 'C:/Users/SysAdminModule/Desktop/Research/spacy-sinhala-ner-final-basic/raw-files'
 gazetteer_csv = os.path.join(file_dir, filename)
 
 
