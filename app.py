@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify, make_response
 from flask_restful import Resource, Api
 from check_entities import ExtractEntities
-from extract_entities_from_model import ExtractEntitiesFromModel
 
 # create an instance of flask
 app = Flask(__name__)
