@@ -7,7 +7,7 @@ import os
 nlp = spacy.blank("si")  # load a new spacy model
 db = DocBin()  # create a DocBin object
 file_dir = 'C:/Users/SysAdminModule/Desktop/Research/spacy-sinhala-ner-final-basic/raw-files'
-filename = 'annotations v1.2.json'
+filename = 'annotations v1.3.json'
 
 annotations = os.path.join(file_dir, filename)
 
@@ -26,4 +26,4 @@ for text, annot in tqdm(TRAIN_DATA['annotations']):
     doc.ents = ents
     db.add(doc)
 
-db.to_disk("./training_data_v1.2.spacy")  # save the docbin object
+db.to_disk("./training_data_v1.3.spacy")  # save the docbin object

@@ -2,4 +2,4 @@ To Train:
 python -m spacy train config.cfg --output ./ --paths.train ./training_data_v2.1.spacy --paths.dev ./training_data_v2.1.spacy
 
 
-python -m spacy train config.cfg --output ./ --paths.train ./training_data_v1.2.spacy --paths.dev ./training_data_v1.2.spacy
+python -m spacy train config.cfg --output ./ --paths.train ./training_data_v1.3.spacy --paths.dev ./training_data_v1.3.spacy
