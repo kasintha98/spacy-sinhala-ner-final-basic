@@ -8,6 +8,7 @@ app = Flask(__name__)
 api = Api(app)
 
 
+# Command Start Server On Port:5000 -> flask run
 # For Post request to http://localhost:5000/check-entities
 class CheckEntities(Resource):
     def post(self):
