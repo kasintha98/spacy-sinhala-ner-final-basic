@@ -33,7 +33,8 @@ class FuzzyMatcher:
             match = process.extractOne(token, choices, scorer=fuzz.token_sort_ratio)
             if match[1] > fuzzy_threshold:
                 match_object = FuzzyMatcher.get_fuzzy_matched_object(patterns, match, token, text)
-                fuzzy_entities.append(match_object)
+                if match_object:
+                    fuzzy_entities.append(match_object)
 
         return fuzzy_entities
 
@@ -44,10 +45,11 @@ class FuzzyMatcher:
         for item in patterns:
             if item['pattern'] == match[0]:
                 start_and_end = FuzzyMatcher.get_start_and_end_char(full_text, item['pattern'])
-
-                match_obj = {"entity": item['label'],
-                             "value": item['id'],
-                             "text": token, "confidence": match[1], "startChar": start_and_end[0].start, "endChar": start_and_end[0].end}
+                if start_and_end:
+                    match_obj = {"entity": item['label'],
+                                 "value": item['id'],
+                                 "text": token, "confidence": match[1], "startChar": start_and_end[0].start,
+                                 "endChar": start_and_end[0].end}
 
         return match_obj
 

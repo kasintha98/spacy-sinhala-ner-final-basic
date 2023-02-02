@@ -21,14 +21,16 @@ class GazetteerConverter:
             csvfile = csv.reader(csvfile)
             for row in csvfile:
                 for i in range(2, len(row)):
-                    obj = {"label": row[0], "pattern": row[i], "id": row[1]}
+                    english_reference = " (" + row[3] + ")" if row[3] else ""
+                    obj = {"label": row[0], "pattern": row[i], "id": row[1] + english_reference}
                     patterns.append(obj)
 
         with open(gazetteer_csv_date, 'r', encoding="utf8") as csvfile:
             csvfile = csv.reader(csvfile)
             for row in csvfile:
                 for i in range(2, len(row)):
-                    obj = {"label": row[0], "pattern": row[i], "id": row[1]}
+                    english_reference = " (" + row[3] + ")" if row[3] else ""
+                    obj = {"label": row[0], "pattern": row[i], "id": row[1] + english_reference}
                     patterns.append(obj)
 
         return patterns

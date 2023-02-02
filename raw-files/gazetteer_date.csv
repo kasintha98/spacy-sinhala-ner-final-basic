@@ -1,7 +1,7 @@
-DATE,සදුදා
-DATE,අඟහරැවදා
-DATE,බදාදා
-DATE,බ්‍රහස්‍පතින්‍දා
-DATE,සිකුරාදා
-DATE,සෙනසුරාදා
-DATE,ඉරිදා
+DATE,සදුදා,සදුදා,Monday
+DATE,අඟහරැවදා,අඟහරැවදා,Tuesday
+DATE,බදාදා,බදාදා,Wednesday
+DATE,බ්‍රහස්‍පතින්‍දා,බ්‍රහස්‍පතින්‍දා,Thursday
+DATE,සිකුරාදා,සිකුරාදා,Friday
+DATE,සෙනසුරාදා,සෙනසුරාදා,Saturday
+DATE,ඉරිදා,ඉරිදා,Sunday
