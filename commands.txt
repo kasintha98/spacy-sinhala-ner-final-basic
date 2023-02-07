@@ -2,4 +2,10 @@ To Train:
 python -m spacy train config.cfg --output ./ --paths.train ./training_data_v2.1.spacy --paths.dev ./training_data_v2.1.spacy
 
 
-python -m spacy train config.cfg --output ./ --paths.train ./training_data_v1.3.spacy --paths.dev ./training_data_v1.3.spacy
+python -m spacy train config.cfg --output ./ --paths.train ./training_data_v1.4.spacy --paths.dev ./training_data_v1.4.spacy
+
+python -m spacy evaluate accuracy ./model-best ./training_data_v1.3.spacy --output --code --gold-preproc --gpu-id --displacy-path --displacy-limit
+
+python -m spacy benchmark accuracy model data_path --output --code --gold-preproc --gpu-id --displacy-path --displacy-limit
+
+spacy==3.1.3
