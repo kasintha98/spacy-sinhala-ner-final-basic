@@ -1,0 +1,116 @@
+value,target,prediction,predicted_by
+1939,DATE,DATE,spacy
+පෝලන්තය,LOCATION,LOCATION,spacy
+1945,DATE,DATE,spacy
+ජර්මනිය,LOCATION,LOCATION,spacy
+ජපානය,LOCATION,LOCATION,spacy
+ජර්මනියේ,LOCATION,LOCATION,spacy
+පෝලන්ත‍ය,LOCATION,LOCATION,spacy
+හිට්ලර්,PERSON,PERSON,spacy
+ජර්මනිය,LOCATION,LOCATION,spacy
+පෝලන්තය,LOCATION,LOCATION,spacy
+ජර්මනිය,LOCATION,LOCATION,spacy
+පෝලන්තයේ,LOCATION,LOCATION,spacy
+1914 ජුනි 28,DATE,DATE,spacy
+ඔස්ට්‍රියාවේ,LOCATION,LOCATION,spacy
+ජර්මනිය,LOCATION,LOCATION,spacy
+ජර්මානුවන්,LOCATION,LOCATION,spacy
+“ග’ඩාන්ස්ක්”,LOCATION,OTHER,spacy
+පෝලන්තය,LOCATION,OTHER,spacy
+පෝලන්ත,LOCATION,LOCATION,spacy
+“ග’ඩාන්ස්ක්”,LOCATION,OTHER,spacy
+ජර්මානු,LOCATION,LOCATION,spacy
+“ඩැන්සිග්”,LOCATION,OTHER,spacy
+ඩැන්සිග්,LOCATION,OTHER,spacy
+ග’ඩාන්ස්ක්,LOCATION,OTHER,spacy
+“ඩැන්සිග්”,LOCATION,OTHER,spacy
+ජර්මානු,LOCATION,LOCATION,spacy
+පෝලන්ත,LOCATION,LOCATION,spacy
+ජර්මනියට,LOCATION,LOCATION,spacy
+1933,DATE,DATE,spacy
+1935,DATE,DATE,spacy
+ජර්මානු ජාතික සමාජවාදී (නාසි) පක්ෂය,ORGANIZATION,OTHER,spacy
+“ජර්මානු,LOCATION,LOCATION,spacy
+ජර්මනිය,LOCATION,LOCATION,spacy
+1938,DATE,DATE,spacy
+ජර්මනියට,LOCATION,LOCATION,spacy
+ඇඩෝල්ෆ් හිට්ලර්,PERSON,OTHER,spacy
+පෝලන්තයට,LOCATION,OTHER,spacy
+පෝලන්ත,LOCATION,LOCATION,spacy
+හිට්ලර්,PERSON,OTHER,spacy
+1939 සැප්තැම්බර් 1,DATE,DATE,spacy
+පෝලන්ත,LOCATION,LOCATION,spacy
+ඩැන්සිග්,LOCATION,OTHER,spacy
+ඩැන්සිග්,LOCATION,OTHER,spacy
+පෝලන්ත,LOCATION,LOCATION,spacy
+එක්සත් ජාතීන්,ORGANIZATION,LOCATION,spacy
+ඩැන්සිග්,LOCATION,OTHER,spacy
+පෝලන්ත,LOCATION,LOCATION,spacy
+ජර්මානු,LOCATION,LOCATION,spacy
+ජර්මනියේ,LOCATION,LOCATION,spacy
+ජර්මන්-පෝලන්ත,LOCATION,OTHER,spacy
+1939,DATE,DATE,spacy
+අප්‍රියෙල්,DATE,OTHER,spacy
+කොන්රඩ් ගුඩර්ස්කි,PERSON,OTHER,spacy
+ඩැන්සිග්,LOCATION,OTHER,spacy
+ඩැන්සිග්,LOCATION,OTHER,spacy
+පෝලන්ත,LOCATION,LOCATION,spacy
+අගෝස්තු,DATE,DATE,spacy
+ජර්මනියෙන්,LOCATION,OTHER,spacy
+ග්ඩින්‍යා,LOCATION,OTHER,spacy
+බිඩ්ගෝෂ්ච්,LOCATION,OTHER,spacy
+ගුඩර්ස්කි,PERSON,OTHER,spacy
+පෝලන්ත,LOCATION,LOCATION,spacy
+ජර්මානු,LOCATION,LOCATION,spacy
+ඩැන්සිග්,LOCATION,OTHER,spacy
+ගුඩර්ස්කි,PERSON,PERSON,spacy
+පෝලන්ත,LOCATION,LOCATION,spacy
+පෝලන්තයට,LOCATION,OTHER,spacy
+ඇල්ෆොන්ස් ෆ්ලිසිකොව්ස්කි,PERSON,PERSON,spacy
+ගුඩර්ස්කිට,PERSON,OTHER,spacy
+සැප්තැම්බර් 01,DATE,DATE,spacy
+ඩැන්සිග්,LOCATION,OTHER,spacy
+ජර්මානුවන්,LOCATION,LOCATION,spacy
+කොන්රඩ් ගුඩර්ස්කි,PERSON,OTHER,spacy
+ගුඩර්ස්කි,PERSON,OTHER,spacy
+ඩැන්සිග්,LOCATION,OTHER,spacy
+ගුඩර්ස්කි,PERSON,OTHER,spacy
+ජර්මානුවන්,LOCATION,OTHER,spacy
+ඩැන්සිග්,LOCATION,OTHER,spacy
+ජර්මානුවන්,LOCATION,OTHER,spacy
+උදෑසන 11,TIME,OTHER,spacy
+ජර්මානු,LOCATION,LOCATION,spacy
+පෝලන්ත,LOCATION,LOCATION,spacy
+කොන්රඩ් ගුඩර්ස්කි,PERSON,OTHER,spacy
+ජර්මානුවන්,LOCATION,LOCATION,spacy
+ඩැන්සිග්,LOCATION,OTHER,spacy
+පෝලන්තයට,LOCATION,LOCATION,spacy
+ඩැන්සිග්,LOCATION,OTHER,spacy
+ජර්මානුවන්ට,LOCATION,LOCATION,spacy
+ජර්මානු,LOCATION,LOCATION,spacy
+වූ විලී බෙත්කි,PERSON,OTHER,spacy
+ඇල්බට් ෆොස්ටර්,PERSON,OTHER,spacy
+ජර්මානු,LOCATION,LOCATION,spacy
+පස්වරු පහ,TIME,OTHER,spacy
+ජර්මානුවන්,LOCATION,LOCATION,spacy
+පෝලන්ත,LOCATION,LOCATION,spacy
+ජර්මානු,LOCATION,LOCATION,spacy
+විලී බෙත්කි,PERSON,OTHER,spacy
+පෝලන්ත,LOCATION,LOCATION,spacy
+ජර්මානු,LOCATION,LOCATION,spacy
+ජර්මානුවන්,LOCATION,LOCATION,spacy
+ගෙස්ටපෝ රෝහලට,LOCATION,PERSON,spacy
+ජර්මානු,LOCATION,LOCATION,spacy
+ගෙස්ටපෝ රෝහලට,LOCATION,OTHER,spacy
+ඩැන්සිග්,LOCATION,OTHER,spacy
+ඩැන්සිග්,LOCATION,OTHER,spacy
+පෝලන්ත,LOCATION,LOCATION,spacy
+පෝලන්තයට,LOCATION,LOCATION,spacy
+“ටුචෝලා”,LOCATION,LOCATION,spacy
+ජර්මානු,LOCATION,LOCATION,spacy
+පෝලන්ත,LOCATION,LOCATION,spacy
+ඩැන්සිග්,LOCATION,OTHER,spacy
+ඩැන්සිග්,LOCATION,OTHER,spacy
+පෝලන්තයට,LOCATION,LOCATION,spacy
+පෝලන්තයට,LOCATION,LOCATION,spacy
+“ග’ඩාන්ස්ක්”,LOCATION,OTHER,spacy

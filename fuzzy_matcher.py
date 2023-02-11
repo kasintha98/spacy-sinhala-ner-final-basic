@@ -49,7 +49,7 @@ class FuzzyMatcher:
                     match_obj = {"entity": item['label'],
                                  "value": item['id'],
                                  "text": token, "confidence": match[1], "startChar": start_and_end[0].start,
-                                 "endChar": start_and_end[0].end}
+                                 "endChar": start_and_end[0].end, "extractedBy": "fuzzy_matcher"}
 
         return match_obj
 
