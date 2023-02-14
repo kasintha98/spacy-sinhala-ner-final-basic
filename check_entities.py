@@ -1,4 +1,5 @@
 import spacy
+import re
 from spacy.lang.si import Sinhala
 from gazetteer_converter import GazetteerConverter
 from fuzzy_matcher import FuzzyMatcher
@@ -37,7 +38,6 @@ class ExtractEntities:
                                        extracted_spacy_model_entities, extracted_bert_model_entities):
 
         all_objects = extracted_gazetteer_entities + extracted_fuzzy_entities + extracted_spacy_model_entities + extracted_bert_model_entities
-        x = extracted_gazetteer_entities + extracted_fuzzy_entities + extracted_spacy_model_entities + extracted_bert_model_entities
         similar_objects = []
         for i, obj1 in enumerate(all_objects):
             for obj2 in all_objects[i + 1:]:
@@ -52,16 +52,8 @@ class ExtractEntities:
         for obj in overlapped_entity_list:
             non_overlapped_entity_list.remove(obj)
 
-        for item in non_overlapped_entity_list:
-            print(item)
-
-        print("**********************************************")
         cleaned_overlaps = ExtractEntities.get_unique_entities_from_duplicate_picks(overlapped_entity_list)
-        for item in cleaned_overlaps:
-            print(item)
-
         final_list = ExtractEntities.get_final_filtered_list(cleaned_overlaps + non_overlapped_entity_list)
-
         return final_list
 
     @staticmethod
@@ -95,7 +87,6 @@ class ExtractEntities:
             for j in range(i + 1, len(duplicate_picks)):
                 if duplicate_picks[i]["text"] == duplicate_picks[j]["text"]:
                     if duplicate_picks[i]["entity"] != duplicate_picks[j]["entity"]:
-                        # print("No",duplicate_picks[i]["extractedBy"], duplicate_picks[i]["entity"],duplicate_picks[j]["extractedBy"],duplicate_picks[j]["entity"])
                         if priorityList.index(duplicate_picks[i]["extractedBy"]) < priorityList.index(
                                 duplicate_picks[j]["extractedBy"]):
                             if next((x for x in result if
@@ -108,31 +99,40 @@ class ExtractEntities:
                                                             duplicate_picks[j]["extractedBy"]
                         result.append(duplicate_picks[i])
                         break
-
         return result
 
     @staticmethod
     def get_final_filtered_list(all_list):
-        print(len(all_list))
         filtered_entities = all_list
-        a = []
-
-        #for i in range(len(all_list)):
-        #    for j in range(i + 1, len(all_list)):
-         #       print(all_list[i]["startChar"], all_list[j]["startChar"], all_list[i]["value"], "and",
-          #            all_list[i]["endChar"], all_list[j]["endChar"], all_list[j]["value"])
-         #       if all_list[i]["startChar"] >= all_list[j]["startChar"] and all_list[i]["endChar"] <= all_list[j][
-          #          "endChar"]:
-          #          print(all_list[i]["value"])
-          #          a.append(all_list[i])
-           #         filtered_entities.remove(all_list[i])
 
         for i, obj1 in enumerate(all_list):
             for obj2 in all_list[i + 1:]:
                 if obj1["startChar"] >= obj2["startChar"] and obj1["endChar"] <= obj2["endChar"]:
                     filtered_entities.remove(obj1)
-                    a.append(obj1)
+                if obj2["startChar"] >= obj1["startChar"] and obj2["endChar"] <= obj1["endChar"]:
+                    filtered_entities.remove(obj2)
 
-        print("AA", a)
-        print(len(filtered_entities))
-        return filtered_entities
+        filtered_entities_final = ExtractEntities.remove_stop_words_from_picked_entity(filtered_entities)
+
+        return filtered_entities_final
+
+    @staticmethod
+    def remove_punctuation_from_text(text):
+        new_text = re.sub('[‘’!()–{}:;“,<>./?@#$%^&*_|]', "", text)
+        return new_text
+
+    @staticmethod
+    def remove_stop_words_from_picked_entity(all_list):
+        f = open("stopwords.txt", "r", encoding="utf8")
+        contents = f.readlines()
+        res = []
+        final_list = []
+
+        for sub in contents:
+            res.append(sub.replace("\n", ""))
+
+        for el in all_list:
+            if el["text"] not in res:
+                final_list.append(el)
+
+        return final_list

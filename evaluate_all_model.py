@@ -1,6 +1,7 @@
 from tqdm import tqdm
 import json
 import os
+import requests
 import csv
 from check_entities import ExtractEntities
 
@@ -24,6 +25,27 @@ class EvaluateAllModels:
 
             if model_type == "spacy":
                 extracted_entities = ExtractEntities.tag_model_entities_from_text(text)
+
+            if model_type == "all":
+                text_no_punc = ExtractEntities.remove_punctuation_from_text(text)
+                extracted_gazetteer_entities = ExtractEntities.tag_gazetteer_entities_from_text(text)
+                extracted_fuzzy_entities = ExtractEntities.tag_fuzzy_entities_from_text(text)
+                extracted_spacy_model_entities = ExtractEntities.tag_model_entities_from_text(text)
+                extracted_bert_model_entities = {}
+
+                # get BERT model predictions
+                text_for_bert = {
+                    "text": text_no_punc
+                }
+                res = requests.post(url="http://localhost:6000/check-entities", json=text_for_bert)
+
+                if res and res.status_code == 200:
+                    extracted_bert_model_entities = res.json()["extractedEntitiesFromModel"]
+
+                extracted_entities = ExtractEntities.combine_all_extracted_entities(extracted_gazetteer_entities,
+                                                                                          extracted_fuzzy_entities,
+                                                                                          extracted_spacy_model_entities,
+                                                                                          extracted_bert_model_entities)
 
             for start, end, label in annot["entities"]:
                 predicted_label = "OTHER"

@@ -146,8 +146,16 @@ gaze = [
         }
     ]
 
-result = ExtractEntities.combine_all_extracted_entities(gaze, fuzzy, spacy, bert)
+result = []
+# result = ExtractEntities.combine_all_extracted_entities(gaze, fuzzy, spacy, bert)
 print("result..................")
 
 for item in result:
     print(item)
+
+
+#text = ExtractEntities.remove_punctuation_from_text("මහාචාර්ය දසුන්, අද පෙරවරුවේ බැංකොක් සිට ශ්‍රී ලංකාව වෙත පැමිනියා.")
+
+#print(text)
+
+# a = ExtractEntities.remove_stop_words_from_picked_entity(None)
