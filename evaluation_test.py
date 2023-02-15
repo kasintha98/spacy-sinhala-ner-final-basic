@@ -3,7 +3,7 @@ from sklearn.metrics import f1_score, accuracy_score, precision_score, recall_sc
 import pandas as pd
 import numpy as np
 
-#EvaluateAllModels.get_predictions("spacy")
+# EvaluateAllModels.get_predictions("all")
 
 
 file = open('predictions_output.csv', encoding="utf8")

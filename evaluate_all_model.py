@@ -43,9 +43,9 @@ class EvaluateAllModels:
                     extracted_bert_model_entities = res.json()["extractedEntitiesFromModel"]
 
                 extracted_entities = ExtractEntities.combine_all_extracted_entities(extracted_gazetteer_entities,
-                                                                                          extracted_fuzzy_entities,
-                                                                                          extracted_spacy_model_entities,
-                                                                                          extracted_bert_model_entities)
+                                                                                    extracted_fuzzy_entities,
+                                                                                    extracted_spacy_model_entities,
+                                                                                    extracted_bert_model_entities)
 
             for start, end, label in annot["entities"]:
                 predicted_label = "OTHER"

@@ -108,9 +108,9 @@ class ExtractEntities:
         for i, obj1 in enumerate(all_list):
             for obj2 in all_list[i + 1:]:
                 if obj1["startChar"] >= obj2["startChar"] and obj1["endChar"] <= obj2["endChar"]:
-                    filtered_entities.remove(obj1)
+                    if obj1 in filtered_entities: filtered_entities.remove(obj1)
                 if obj2["startChar"] >= obj1["startChar"] and obj2["endChar"] <= obj1["endChar"]:
-                    filtered_entities.remove(obj2)
+                    if obj2 in filtered_entities: filtered_entities.remove(obj2)
 
         filtered_entities_final = ExtractEntities.remove_stop_words_from_picked_entity(filtered_entities)
 
