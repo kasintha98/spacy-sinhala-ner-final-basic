@@ -26,6 +26,23 @@ class EvaluateAllModels:
             if model_type == "spacy":
                 extracted_entities = ExtractEntities.tag_model_entities_from_text(text)
 
+            if model_type == "xlm":
+                text_no_punc = ExtractEntities.remove_punctuation_from_text(text)
+                # get BERT model predictions
+                text_for_bert = {
+                    "text": text_no_punc
+                }
+                res = requests.post(url="http://localhost:6000/check-entities", json=text_for_bert)
+
+                if res and res.status_code == 200:
+                    extracted_entities = res.json()["extractedEntitiesFromModel"]
+
+            if model_type == "gazetteer":
+                extracted_entities = ExtractEntities.tag_gazetteer_entities_from_text(text)
+
+            if model_type == "fuzzy":
+                extracted_entities = ExtractEntities.tag_fuzzy_entities_from_text(text)
+
             if model_type == "all":
                 text_no_punc = ExtractEntities.remove_punctuation_from_text(text)
                 extracted_gazetteer_entities = ExtractEntities.tag_gazetteer_entities_from_text(text)
@@ -56,7 +73,7 @@ class EvaluateAllModels:
 
                 predictions.append([text[start:end], label, predicted_label, model_type])
 
-        with open('predictions_output.csv', 'w', newline='', encoding="utf8") as file:
+        with open('predictions_output_'+model_type+'.csv', 'w', newline='', encoding="utf8") as file:
             writer = csv.writer(file)
             writer.writerow(["value", "target", "prediction", "predicted_by"])
 
