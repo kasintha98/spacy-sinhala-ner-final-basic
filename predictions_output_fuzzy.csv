@@ -2,18 +2,18 @@ value,target,prediction,predicted_by
 1939,DATE,OTHER,fuzzy
 පෝලන්තය,LOCATION,LOCATION,fuzzy
 1945,DATE,OTHER,fuzzy
-ජර්මනිය,LOCATION,OTHER,fuzzy
-ජපානය,LOCATION,OTHER,fuzzy
+ජර්මනිය,LOCATION,LOCATION,fuzzy
+ජපානය,LOCATION,LOCATION,fuzzy
 ජර්මනියේ,LOCATION,OTHER,fuzzy
 පෝලන්ත‍ය,LOCATION,OTHER,fuzzy
 හිට්ලර්,PERSON,OTHER,fuzzy
 ජර්මනිය,LOCATION,OTHER,fuzzy
 පෝලන්තය,LOCATION,LOCATION,fuzzy
-ජර්මනිය,LOCATION,OTHER,fuzzy
+ජර්මනිය,LOCATION,LOCATION,fuzzy
 පෝලන්තයේ,LOCATION,OTHER,fuzzy
 1914 ජුනි 28,DATE,OTHER,fuzzy
 ඔස්ට්‍රියාවේ,LOCATION,OTHER,fuzzy
-ජර්මනිය,LOCATION,OTHER,fuzzy
+ජර්මනිය,LOCATION,LOCATION,fuzzy
 ජර්මානුවන්,LOCATION,LOCATION,fuzzy
 “ග’ඩාන්ස්ක්”,LOCATION,OTHER,fuzzy
 පෝලන්තය,LOCATION,LOCATION,fuzzy
@@ -31,7 +31,7 @@ value,target,prediction,predicted_by
 1935,DATE,OTHER,fuzzy
 ජර්මානු ජාතික සමාජවාදී (නාසි) පක්ෂය,ORGANIZATION,OTHER,fuzzy
 “ජර්මානු,LOCATION,OTHER,fuzzy
-ජර්මනිය,LOCATION,OTHER,fuzzy
+ජර්මනිය,LOCATION,LOCATION,fuzzy
 1938,DATE,OTHER,fuzzy
 ජර්මනියට,LOCATION,OTHER,fuzzy
 ඇඩෝල්ෆ් හිට්ලර්,PERSON,OTHER,fuzzy
@@ -55,7 +55,7 @@ value,target,prediction,predicted_by
 ඩැන්සිග්,LOCATION,OTHER,fuzzy
 ඩැන්සිග්,LOCATION,OTHER,fuzzy
 පෝලන්ත,LOCATION,LOCATION,fuzzy
-අගෝස්තු,DATE,LOCATION,fuzzy
+අගෝස්තු,DATE,DATE,fuzzy
 ජර්මනියෙන්,LOCATION,OTHER,fuzzy
 ග්ඩින්‍යා,LOCATION,OTHER,fuzzy
 බිඩ්ගෝෂ්ච්,LOCATION,OTHER,fuzzy

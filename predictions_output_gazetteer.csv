@@ -2,18 +2,18 @@ value,target,prediction,predicted_by
 1939,DATE,OTHER,gazetteer
 පෝලන්තය,LOCATION,LOCATION,gazetteer
 1945,DATE,OTHER,gazetteer
-ජර්මනිය,LOCATION,OTHER,gazetteer
-ජපානය,LOCATION,OTHER,gazetteer
+ජර්මනිය,LOCATION,LOCATION,gazetteer
+ජපානය,LOCATION,LOCATION,gazetteer
 ජර්මනියේ,LOCATION,OTHER,gazetteer
 පෝලන්ත‍ය,LOCATION,OTHER,gazetteer
 හිට්ලර්,PERSON,OTHER,gazetteer
-ජර්මනිය,LOCATION,OTHER,gazetteer
+ජර්මනිය,LOCATION,LOCATION,gazetteer
 පෝලන්තය,LOCATION,LOCATION,gazetteer
-ජර්මනිය,LOCATION,OTHER,gazetteer
+ජර්මනිය,LOCATION,LOCATION,gazetteer
 පෝලන්තයේ,LOCATION,OTHER,gazetteer
 1914 ජුනි 28,DATE,OTHER,gazetteer
 ඔස්ට්‍රියාවේ,LOCATION,OTHER,gazetteer
-ජර්මනිය,LOCATION,OTHER,gazetteer
+ජර්මනිය,LOCATION,LOCATION,gazetteer
 ජර්මානුවන්,LOCATION,LOCATION,gazetteer
 “ග’ඩාන්ස්ක්”,LOCATION,OTHER,gazetteer
 පෝලන්තය,LOCATION,LOCATION,gazetteer
@@ -31,7 +31,7 @@ value,target,prediction,predicted_by
 1935,DATE,OTHER,gazetteer
 ජර්මානු ජාතික සමාජවාදී (නාසි) පක්ෂය,ORGANIZATION,OTHER,gazetteer
 “ජර්මානු,LOCATION,OTHER,gazetteer
-ජර්මනිය,LOCATION,OTHER,gazetteer
+ජර්මනිය,LOCATION,LOCATION,gazetteer
 1938,DATE,OTHER,gazetteer
 ජර්මනියට,LOCATION,OTHER,gazetteer
 ඇඩෝල්ෆ් හිට්ලර්,PERSON,OTHER,gazetteer
@@ -55,7 +55,7 @@ value,target,prediction,predicted_by
 ඩැන්සිග්,LOCATION,OTHER,gazetteer
 ඩැන්සිග්,LOCATION,OTHER,gazetteer
 පෝලන්ත,LOCATION,LOCATION,gazetteer
-අගෝස්තු,DATE,LOCATION,gazetteer
+අගෝස්තු,DATE,DATE,gazetteer
 ජර්මනියෙන්,LOCATION,OTHER,gazetteer
 ග්ඩින්‍යා,LOCATION,OTHER,gazetteer
 බිඩ්ගෝෂ්ච්,LOCATION,OTHER,gazetteer

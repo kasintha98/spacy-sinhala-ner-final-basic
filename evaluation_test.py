@@ -5,7 +5,7 @@ import numpy as np
 
 model_type = "xlm"
 
-EvaluateAllModels.get_predictions(model_type)
+#EvaluateAllModels.get_predictions(model_type)
 
 
 file = open('predictions_output_'+model_type+'.csv', encoding="utf8")
